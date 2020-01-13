@@ -1,0 +1,7 @@
+<header> ----- Executed Tasks : {{doneTask.length}} ----- </header>
+<ul>
+    <li appDate appChecked [date]='task.end' *ngFor="let task of doneTask">
+        {{task.name|capitalLetter: ' - done!'}}
+    </li>
+</ul>
+<br><br>

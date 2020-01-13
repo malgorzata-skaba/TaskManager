@@ -1,0 +1,16 @@
+<header> To-Do List |
+    <span [ngStyle]="{color: getColor()}">Tasks: {{toDoList.length}} </span> </header>
+<ng-container *ngIf="toDoList.length > 0 ; else noTask">
+
+    <ul>
+        <li appDate [date]="task.created" *ngFor="let task of toDoList | sortTasks; let odd = odd" [ngClass]="{'odd-li': odd, 'last-li':toDoList.length ===1 }">
+            {{task.name|capitalLetter : ':'}}
+            <button type="button" class="btn btn-success" (click)="done(task)">Done</button>
+            <button type="button" class="btn btn-danger" (click)="remove(task)">Remove</button>
+
+        </li>
+    </ul>
+</ng-container>
+<ng-template #noTask>TO-DO list is empty. You have no tasks today. </ng-template>
+
+<br><br>

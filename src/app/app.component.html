@@ -1,0 +1,23 @@
+<p>--------------------------------------- TASK MANAGER ---------------------------------------</p>
+
+<div class="container">
+
+    <app-add-task></app-add-task>
+
+
+    <main>
+
+        <section id="toDo">
+            <app-to-do-list></app-to-do-list>
+        </section>
+
+        <section id="done">
+            <app-done-list></app-done-list>
+        </section>
+
+
+    </main>
+    <section id="restDb">
+        <button (click)="save()" type="button" class="btn btn-primary btn-lg">Zapisz</button>
+    </section>
+</div>

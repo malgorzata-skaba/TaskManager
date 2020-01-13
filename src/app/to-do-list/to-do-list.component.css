@@ -1,0 +1,40 @@
+header {
+    margin-bottom: 20px;
+    border-bottom: grey 2px dotted;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+}
+
+button {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+li {
+    list-style-position: inside;
+    padding: 5px;
+    margin-bottom: 1px;
+    background: lightgray;
+    text-align: left;
+}
+
+.odd-li {
+    background: lavender;
+    padding: 5px;
+}
+
+.last-li {
+    background: rgb(223, 108, 108);
+    padding: 5px;
+}
